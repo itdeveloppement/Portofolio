@@ -1,0 +1,90 @@
+/*NORMELAZIED*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*IMPORT FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+/*IMPORT FRAMEWORK*/
+
+/*VARIABLES COLOR ET STYLE*/
+:root {
+    /*variable color*/
+    --firstColor: #162083;
+    /*variable font*/
+    --gaeguFont: 'Gaegu', sans-serif;
+    /* border radius*/
+    --borderRadius: border-radius:10px;
+}
+
+/*REGLES GENERALE*/
+
+/* flex box */
+.flex { 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justifyBetween {
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+
+/*largeur des sections sur une base de 12 colonnes*/
+
+.container-1200{
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.large_12 {
+    width: 100%;
+}
+.large_6 {
+    width: 50%;
+}
+.large_4 {
+    width: 25%;
+}
+.large_1 {
+    width: 8.3%;
+}
+
+/* gestion des liens hypertexte*/
+a {
+    color:var(--primaryColor);
+    font-family: var(--gaeguFont);
+    text-decoration: none;
+}
+
+/* Couleur du texte pour les liens non visités */
+a:link { color:var(--primaryColor);}
+/* Couleur du texte pour les liens visités */
+a:visited { color:var(--primaryColor);}
+/* Soulignement au survol */
+a:hover { background-color:var(--primaryColor);}
+/* Couleur du texte lorsque le lien est activé (clic) */
+a:active { color:var(--primaryColor);}
+
+/*HEADER*/
+/*FOOTER*/
+/*PAGE ACCUEIL*/
+    /*hero*/
+    /*section*/
+
+/*PAGE TUTU*/
+    /*section*/
+
+/* responsive*/
+@media all and (max-width: 575px) {
+}
+
+@media screen and (min-width:576px) and (max-width:1080px) {
+}

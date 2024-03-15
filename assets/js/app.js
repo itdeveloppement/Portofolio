@@ -7,3 +7,5 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+
+  console.log("test dans app.js")

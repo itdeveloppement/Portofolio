@@ -4,36 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- titre max 55/65 caracteres -->
-    <title>Mon titre</title>
+    <title>Developpeur Full Stack</title>
     <!-- meta description max 160 caracteres -->
     <meta name="description" content="Ma description">
+    <!-- link css swiper-->
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css"/>
     <!-- link css -->
-    <link rel="stylesheet" href="./assets/css/styleTravaux.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!---fontawesome.com integration icons -->
     <script src="https://kit.fontawesome.com/98908597c5.js" crossorigin="anonymous"></script>
     <!--link font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <!--link framework-->
     
 <body>
-    <!-- HEADER -->
-    <header>
-    </header>
-      
-    <!-- MAIN -->
-    <main>
-        <p>J'y suis presque !! Une petite video pour patienter ?!</p>
-        <iframe width="344" height="611" src="https://www.youtube.com/embed/NJlSKbF6bEw" title="Seguime por màs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </main>
-    
-    <!-- FOOTER -->
-    <footer>
-    </footer>
-    
-    <!-- lien fichier java script et attente du chargement html avant js-->
+    <div class="">
+
+            <!-- HEADER -->
+        <header class="header">
+            <!-- navigation -->
+            <nav class="header__nav">
+                <ul class="header__nav-list flex">
+                    <li class="header__nav-item"><a class="header_nav-link" href=""># Projet</a></li>
+                    <li class="header__nav-item"><a class="header_nav-link" href=""># About me</a></li>
+                    <li class="header__nav-item"><a class="header_nav-link" href=""># Skills</a></li>
+                    <li class="header__nav-item"><a class="header_nav-link" href=""># Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- hero accroche -->
+        <section class="hero">
+            <div>
+                <!-- accroche -->
+                <h2> Le numerique ● <br>au coeur de vos projets.</h2>
+                <h1>Marti Castellano <br>#Developpeur ▲ full stack.</h1>
+                <div class="flex">
+                    <p>@</p>
+                    <!-- image -->
+                    <div class="containerImgHero"> 
+                        <img src="./assets/images/imagesTest/image1.jpeg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN -->
+        <main>
+            <!-- projet -->
+            <section class="projet">
+                <h3>> Projets realises</h3>
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./assets/images/imagesTest/image1.jpeg"></div>
+                        <div class="swiper-slide"><img src="./assets/images/imagesTest/image3.jpeg"></div>
+                        <div class="swiper-slide"><img src="./assets/images/imagesTest/image4.jpeg"></div>
+                        <div class="swiper-slide"><img src="./assets/images/imagesTest/image2.jpeg"></div>
+                        <div class="swiper-slide"><img src="./assets/images/imagesTest/image5.jpeg"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <!-- About me -->
+            <section class="about">
+                <h3>About me <</h3>
+                
+            </section>
+            <!-- Skills -->
+            <section class="skills">
+                <h3>> Competances</h3>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p> contact: en construction</p>
+        </footer>
+    </div>
+    <!-- lien fichier js-->
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/app.js" defer></script>
 </body>
 </html>

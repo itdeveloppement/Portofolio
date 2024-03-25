@@ -36,18 +36,47 @@ function openModal () {
 }
 
 
+// FILTRE SECTION TRAVAIL RECENT
 
-// carousel swiper
-/*
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    freeMode: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-
-  console.log("test dans app.js")
-  */
+/* card 1 */
+document.querySelector(".container__card-1").addEventListener("mouseover",() => {
+  document.querySelector(".container__filter-opa-1").style.opacity = '1';
+});
+document.querySelector(".container__card-1").addEventListener("mouseout",() => {
+  document.querySelector(".container__filter-opa-1").style.opacity = '0';
+});
+/* card 2 */
+document.querySelector(".container__card-2").addEventListener("mouseover",() => {
+  document.querySelector(".container__filter-opa-2").style.opacity = '1';
+});
+document.querySelector(".container__card-2").addEventListener("mouseout",() => {
+  document.querySelector(".container__filter-opa-2").style.opacity = '0';
+});
+/* card 3 */
+document.querySelector(".container__card-3").addEventListener("mouseover",() => {
+  document.querySelector(".container__filter-opa-3").style.opacity = '1';
+});
+document.querySelector(".container__card-3").addEventListener("mouseout",() => {
+  document.querySelector(".container__filter-opa-3").style.opacity = '0';
+});
+/* card 4 */
+document.querySelector(".container__card-4").addEventListener("mouseover",() => {
+  document.querySelector(".container__filter-opa-4").style.opacity = '1';
+});
+document.querySelector(".container__card-4").addEventListener("mouseout",() => {
+  document.querySelector(".container__filter-opa-4").style.opacity = '0';
+});
+/* card 5 */
+document.querySelector(".container__card-5").addEventListener("mouseover",() => {
+  document.querySelector(".container__filter-opa-5").style.opacity = '1';
+});
+document.querySelector(".container__card-5").addEventListener("mouseout",() => {
+  document.querySelector(".container__filter-opa-5").style.opacity = '0';
+});
+/* card 6 */
+document.querySelector(".container__card-6").addEventListener("mouseover",() => {
+  document.querySelector(".container__filter-opa-6").style.opacity = '1';
+});
+document.querySelector(".container__card-6").addEventListener("mouseout",() => {
+  document.querySelector(".container__filter-opa-6").style.opacity = '0';
+});

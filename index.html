@@ -8,11 +8,12 @@
     <!-- meta description max 160 caracteres -->
     <meta name="description" content="Ma description">
     <!-- link css swiper-->
-    <link rel="stylesheet" href="./assets/js/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
+      <!-- link css hambergers-->
+      <link rel="stylesheet" href="./assets/css/hamburgers.css"/>
     <!-- link css -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!---fontawesome.com integration icons -->
-    <script src="https://kit.fontawesome.com/98908597c5.js" crossorigin="anonymous"></script>
+    
     <!--link font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,45 +23,108 @@
     <!--link framework-->
     
 <body>
-    <div class="">
-
-            <!-- HEADER -->
-        <header class="header">
-            <!-- navigation -->
-            <nav class="header__nav">
-                <ul class="header__nav-list flex">
-                    <li class="header__nav-item"><a class="header_nav-link" href=""># Projet</a></li>
-                    <li class="header__nav-item"><a class="header_nav-link" href=""># About me</a></li>
-                    <li class="header__nav-item"><a class="header_nav-link" href=""># Skills</a></li>
-                    <li class="header__nav-item"><a class="header_nav-link" href=""># Contact</a></li>
-                    
+    <!-- HEADER -->
+    <header>
+        <section class="nav-bar flex">
+            <!-- navigation centrale-->
+            <nav class="nav-central">
+                <ul class="nav-ul header__nav-ul flex">
+                    <li class="nav-li header__li"><a class="link header__link" href=""># services</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href=""># travail recent</a></li>
+                    <li class="nav-li header__li"><a class="link  header__link" href=""># competences</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href=""># about me</a></li>
+                    <li class="nav-li header__li"><a class="link  header__link" href=""># contact</a></li>
                 </ul>
             </nav>
-        </header>
+            <!-- nav droite -->
+            <nav class="nav-right">
+                <!-- changer la typo -->
+                <button id="btn-typo" type="button">Changer la typo</button>
+            </nav>
 
-        <!-- hero accroche -->
-        <section class="hero">
-            <div>
-                <!-- accroche -->
-                <h2> Le numerique ● <br>au coeur de vos projets.</h2>
-                <h1>Marti Castellano <br>#Developpeur ▲ full stack.</h1>
-                <div class="flex">
-                    <p>@</p>
+            <!-- burger import burger Collapse -->
+            <button class="header-burger header-burger--is-open hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button> 
+        </section>
+        <!-- modale menu-->
+        <section class="header-modal">
+            <!-- changer la typo -->
+            <button id="btn-typo" type="button">Changer la typo</button>
+            <!-- nav haut -->
+            <nav class="nav-height">
+                <ul class="nav-ul header__nav-ul flex">
+                    <li class="nav-li header__li"><a class="link header__link" href=""># services</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href=""># travail recent</a></li>
+                    <li class="nav-li header__li"><a class="link  header__link" href=""># competences</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href=""># about me</a></li>
+                    <li class="nav-li header__li"><a class="link  header__link" href=""># contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <!-- hero accroche -->
+    <section class="hero">
+        <div class="hero__content">
+            <!-- accroche -->
+            <h1 class="title-h1 hero__title-h1"> Conception<br> d'applications web ●</h1>
+
+            <p class="para hero__para">Marti Castellano ▲<a class="link hero__address__link" href="mailto:exemple@contact.com"><p class="para hero__address__para">@ contact</p></a></p>
+            <div class="hero__content-info">   
                     <!-- image -->
-                    <div class="containerImgHero"> 
-                        <img src="./assets/images/bannieres.jpg">
-                    </div>
+                <div class="hero__images"> 
+                    <img class="hero__images-img"src="./assets/images/bannieresInfo.jpg">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
         <!-- MAIN -->
         <main>
+            <!-- services -->
+            <section class="services flex">
+                <h3 class="title-h3 services__title-h3">> Services</h3>
+                <div class="services__container">
+                    <h4 class="title-h4 services__title-h4">Conception de site web et mobile</h4>
+                    <ul class="nav-ul services__nav-lu">
+                        <li class="nav-li">Sites d'Entreprise</li>
+                        <li class="nav-li">Sites d'E-commerce </li>
+                        <li class="nav-li">Sites Portfolio</li>
+                    </ul>
+                </div>
+                <div class="services__container">
+                <h4 class="title-h4 services__title-h4">Design d'interface</h4>
+                    <ul class="nav-ul services__nav-lu">
+                        <li class="nav-li">Analyse des comportements utilisateur</li>
+                        <li class="nav-li">Tests utilisateur</li>
+                        <li class="nav-li">Maquetage de l'appplication</li>
+                    </ul>
+                </div>
+                <div class="services__container">
+                <h4 class="title-h4 services__title-h4">Referencement et accessibilité</h4>
+                    <ul class="nav-ul services__nav-lu">
+                        <li class="nav-li">Analyse SEO</li>
+                        <li class="nav-li">Analyse accéssibilité</li>
+                    </ul>
+                </div>
+            </section>
+
             <!-- projet -->
             <section class="projet">
-                <h3>> Projets realises</h3>
+                <h3 class="title-h3 projet__title-h3">>travail recent</h3>
 
-                <!-- Swiper -->
+                <div class="container projet__container flex">
+                    <div class="container__card container__card-1"><img src="./assets/images/imagesTest/image3.jpeg"></div>
+                    <div class="container__card container__card-2"><img src="./assets/images/imagesTest/image3.jpeg"></div>
+                    <div class="container__card container__card-3"><img src="./assets/images/imagesTest/image4.jpeg"></div>
+                    <div class="container__card container__card-4"><img src="./assets/images/imagesTest/image1.jpeg"></div>
+                    <div class="container__card container__card-5"><img src="./assets/images/imagesTest/image4.jpeg"></div>
+                    <div class="container__card container__card-6"><img src="./assets/images/imagesTest/image5.jpeg"></div>
+                </div>
+
+                <!-- Swiper 
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="./assets/images/imagesTest/image1.jpeg"></div>
@@ -75,27 +139,53 @@
                         <div class="swiper-slide"><img src="./assets/images/imagesTest/image5.jpeg"></div>
                     </div>
                     <div class="swiper-pagination"></div>
-                </div>
+                </div> -->
             </section>
             <!-- About me -->
             <section class="about">
-                <h3>About me <</h3>
-                
+                <h3 class="title-h3 about__title-h3">About me <</h3>
+                <P>J'aime écouter, saisir et comprendre le comportement et les besoins des utilisateurs. J'aime donner naisssance a des applications qui leurs correspondent.</P>
+                <P>Conception d'interfance permetant une experience utilisateur immersive et intuitive.</P>
             </section>
             <!-- Skills -->
-            <section class="skills">
-                <h3>> Competances</h3>
+            <section class="skills flex">
+                <h3 class="title-h3 skills__title-h3">> Mes competances</h3>
+                <div class="skills__contenair conception__container-left">
+                    <h4>Conception</h4>
+                        <ul>
+                            <li><p>Realiser des entretients utilisateurs</p></li>
+                            <li><p>Définir un parcours utilisateur</p></li>
+                            <li><p>Créer un prototype de l'application</p></li>
+                            <li><p>Réaliser des testes utilisateurs</p></li>
+                        </ul>
+                </div>
+                <div class="skills__contenair conception__container-right">
+                    <h4>Developpement</h4>
+                    <ul>
+                        <li><p>Langage de programation : HTML2, CSS3, JAVA SCRIPT, PHP? SQL</p></li>
+                        <li><p>Logiciel et application : FIGMA, GIT, GITHUB, VSCODE</p></li>
+                    </ul>
+                </div>
             </section>
         </main>
 
         <!-- FOOTER -->
-        <footer>
-            <p> contact:</p>
-            <address>
-    
-            </address>
+        <footer class="footer flex">
+        
+                <h3 class="title-h3 footer__title-h3">@ contact</h3>
+                <address class="address footer__address">
+                    <a class="link" href="mailto:exemple@contact.com">@ exemple@contact.com</a><br />
+                    <a class="link" href="tel:04567890"># 00 00 00 00 00</a>
+                </address>
+        
+            <nav class="nav-footer footer__nav" >
+                <ul class="nav-ul footer__ul">
+                    <li class="nav-li footer__li"><a class="link footer__link" href=""># Projet</a></li>
+                    <li class="nav-li footer__li"><a class="link footer__link" href=""># About me</a></li>
+                    <li class="nav-li footer__li"><a class="link  footer__link" href=""># Skills</a></li>
+                </ul>
+            </nav>
         </footer>
-    </div>
     <!-- lien fichier js-->
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/app.js" defer></script>

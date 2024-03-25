@@ -295,7 +295,7 @@ main {
 }
 .services__container {
     width: 30%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--colorDeux);
     border-radius: 10px;
 }
 .services__title-h4 {
@@ -308,6 +308,9 @@ main {
 }
 /* projet */
 
+.projet {
+    padding: 0 2%;
+}
 .projet__container {
     justify-content: center;
 }
@@ -350,11 +353,29 @@ main {
   }
 */
 /* about */
-.about__title-h3 {
-    text-align: end;
+.about {
+    padding: 0 2% 10% 2%;
 }
-
-
+.about__container {
+    justify-content: center;
+    align-items: center;
+}
+.about__container-para {
+    width: 45%; 
+}
+.about__container-para p{
+    width: 50%;
+    line-height: 2;
+    margin: auto;
+}
+.about__container-img {
+    text-align: center;
+    width: 45%;
+}
+.about__container-img img {
+    width: 400px;
+    height: auto;
+}
 /* skills */
 .skills {
     background-color: var(--colorDeux);

@@ -276,11 +276,7 @@ main {
     width: 32%;
     margin: 0.5%;
 }
-.services__container-description { 
-    border: 1px solid var(--colorDeux);
-    border-radius: 20px;  
-    height: 200px;
-}
+
 .service__container-img {
     position: relative;
     border: 1px solid var(--colorDeux);
@@ -318,9 +314,22 @@ main {
     background-color: rgba(240, 248, 255, 0.76);
     
 }
+.services__container-description { 
+    border: 1px solid var(--colorDeux);
+    border-radius: 20px;  
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
 .services__nav-lu {
+    width: 100%;
     line-height: 1.5;
     padding: 4%;
+    line-height: 2;
+}
+.services__nav-li {
+    text-align: center;
+    padding: 2%;
 }
 /* projet */
 

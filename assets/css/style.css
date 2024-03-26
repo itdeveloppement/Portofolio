@@ -326,6 +326,10 @@ main {
     line-height: 1.5;
     padding: 10%;
     line-height: 2;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--sourceCodePro);
+    color: var(--colorDeux)
 }
 .services__nav-li {
     text-align: center;

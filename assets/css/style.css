@@ -58,16 +58,6 @@ main {
     flex-wrap: wrap;
 }
 
-.justifyBetween {
-    justify-content: space-between;
-}
-.align-center{
-    align-items: center;
-}
-.justifyAround {
-    justify-content: space-around;
-}
-
 /* gestion des lien */
 
 /* etat initial */
@@ -85,12 +75,6 @@ main {
 
 /*largeur des sections sur une base de 12 colonnes*/
 
-.container-1200{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* title */
 .title-h3 {
     width: 100%;
@@ -101,9 +85,9 @@ main {
     padding: 5% 0 5% 0;
 }
 .title-h4 {
-    margin-bottom: 2%;
+    margin-bottom: 20px;
+    font-size: 30px;
 }
-
 
 /*HEADER*/
 .nav-ul {
@@ -184,27 +168,34 @@ main {
 
 /* HERO */
 .hero { 
-    position: relative;
-    top: 70px;
+    
     background-color: var(--colorUn);
     width: 100%;
-    height: 92vh;
+    height: 100vh;
 }
 
 /* hero accroche */
+.hero__titre {
+    width: 50%;
+    align-content: center;
+    padding: 2%;
+}
 
 .hero__title-h1{
     color: var(--colorTrois);
     font-size: 80px; 
     text-transform: uppercase;
     line-height: 1.2; 
-    margin-bottom: 100px;
+    margin-bottom: 10px;
+    
 }
 .hero__para {
-    color: var(--colorTrois);
+    width: 100%;
     font-size: 40px; 
     text-transform: uppercase;
     margin-bottom: 50px;
+    color: var(--colorDeux);
+    animation: colorFade 4s infinite; 
 }
 .hero__address__para {
     color: rgb(6, 0, 0);
@@ -218,22 +209,16 @@ main {
 }
 /* hero image */
 
-.hero__titre {
-    width: 50%;
-    padding: 4.5% 2%;
-}
 .hero__images {
     width: 50%;
-    height: 92vh;
+    height: auto;
     overflow: hidden;
-    
-}
+    height: 100vh;
 
+}
 .hero__images-img {   
     width: 100%; 
     height: auto;
-    border-radius: var(--borderRadius); 
-    
 }
 
 /* animation texte */ 
@@ -249,19 +234,10 @@ main {
     }
 }
 
-.hero__para {
-    color: var(--colorDeux);
-    animation: colorFade 4s infinite; /* La couleur disparaîtra, apparaîtra et disparaîtra de nouveau toutes les 3 secondes */
-}
-
-
-
 /* services */
 .services {
-    padding: 5% 4.5% 0 4.5%;
-    color: var(--colorTrois);
-    
-    
+    padding: 0% 4.5% 0 4.5%;
+    color: var(--colorTrois); 
 }
 .services__container {
     width: 32%;
@@ -270,10 +246,6 @@ main {
     border-radius: var(--borderRadius);
     padding: 2%;
 }
-.services__title-h4 {
-    font-size: 30px;
-}
-
 
 /* projet */
 
@@ -403,34 +375,26 @@ main {
     background-color: rgba(240, 248, 255, 0.97);
     text-align: center;
     color: var(--colorDeux);
-    font-size: 30px;
     padding: 2%;
     margin:0;
     width: 100%;
     height: 70px;
     border-radius: 10px 10px 0 0;
-  
-   
 }
 .skills__contenair {
     width: 49.5%;
-    justify-content: space-between;
     border-radius: var(--borderRadius);
     background-color: var(--colorTrois);
-   
-   
 }
 .skills__contenair-skills {
     width: 49.5%;
     border-radius: var(--borderRadius);
-    background-color: var(--colorTrois);
-    
+    background-color: var(--colorTrois); 
 }
 .skills__title-h5 {
     margin: 20px 0 0 0;
     font-size: 20px;
     color: var(--colorDeux);
- 
 }
 .skills__nav-ul {
     line-height: 2;
@@ -441,20 +405,16 @@ main {
 
 /* grid */
 .container-grid {  
-   
-   justify-items: center; 
-   align-items: center;
-   padding: 5% 10% 5% 10%;
+    padding: 5%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 5px 5px;
     grid-auto-flow: row;
     grid-template-areas:
-      "logo-html logo-css logo-js logo-js . ."
-      "logo-php logo-sql logo-js logo-js . ."
-      "logo-figma logo-figma logo-visual logo-notion . ."
-      "logo-figma logo-figma logo-github logo-git . .";
+      "logo-html logo-css logo-js logo-php . ."
+      "logo-sql logo-visual logo-github logo-git . ."
+      "logo-figma logo-notion logo-autre1 logo-autre2. .";
   }
   
   .logo-js { grid-area: logo-js; }
@@ -481,16 +441,11 @@ main {
     width: 100%;
     height: auto;
   }
-  .logo-figma {
-    width: 30%;
+
+  .logo-html, .logo-css, .logo-php, .logo-sql {
+    width: 70%;
   }
-  .logo-js {
-    width: 30%;
-  }
-  .logo-html, .logo-css,  .logo-php, .logo-sql {
-    width: 60%;
-  }
-  .logo-notion, .logo-github, .logo-git, .logo-visual {
+  .logo-notion, .logo-github, .logo-git, .logo-visual, .logo-figma, .logo-js {
     width: 50%;
 
   }   
@@ -506,15 +461,12 @@ main {
     width: 45%; 
     line-height: 2;
 }
-.about__container-para>h4{
-    margin-bottom: 20px;
-  }
+
 .about__container-para>p{
   margin-bottom: 20px;
 }
 .about__container-img {
     text-align: center;
-    
     width: 45%;
 }
 .about__container-img img {
@@ -523,20 +475,14 @@ main {
     border-radius: var(--borderRadius);
 }
 
-
-
 /*FOOTER*/
 /* contact */
 .footer {
     background-color: var(--colorUn);
-    padding: 5% 2%;
+    padding: 2%;
 }
-
-
 .footer__title-h4 {
     color: var(--colorTrois);
-    font-size: 20px;
- 
 }
 .footer__nav {
     width: 50%;
@@ -546,18 +492,13 @@ main {
     padding-left: 2%;
 }
 .footer__address {
-    line-height: 2;
     width: 50%;
-}
-.footer-adresse__link {
-    padding-left: 2%;
 }
 .footer__mentions {
     width: 100%;
     color: var(--colorTrois);
     text-align: end;
 }
-
 
 /* responsive*/
 @media screen and (min-width:550px) and (max-width:747px){
@@ -566,7 +507,6 @@ main {
 
     .nav-central, .nav-right, .nav-bar #btn-typo {
         display: none;
-      
     }
     .header-modal--is-open {
         transform: translateX(0); 
@@ -577,6 +517,5 @@ main {
     .header-burger {
         width: 100%;
         text-align: end;
-    }
-   
+    } 
 }

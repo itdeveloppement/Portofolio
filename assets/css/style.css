@@ -259,54 +259,22 @@ main {
 /* services */
 .services {
     padding: 5% 4.5% 0 4.5%;
+    color: var(--colorTrois);
+    
     
 }
 .services__container {
-    position: relative;
     width: 32%;
     margin: 0.5%;
-}
-
-.service__container-img {
-    position: relative;
+    background-color: #00b8bb;
     border-radius: var(--borderRadius);
-    height: 100px;
-    overflow: hidden;
-    margin-bottom: 30px;
-
+    padding: 2%;
 }
-.service__container-img img{
-    width: 100%;
-    height: auto;
-    border-radius: var(--borderRadius);
-    position: relative;  
-    top: -150px;
-    filter: sepia(100%) hue-rotate(30deg);  
-}
-
 .services__title-h4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 70px;
     font-size: 30px;
-    color: var(--colorDeux);
-    background-color: rgba(240, 248, 255, 0.8);
-    padding: 2%; 
 }
 
-.services__nav-lu {
-    width: 100%;
-    line-height: 1.5;
-    padding: 10% 0 0 0;
-    line-height: 2;
-    font-size: 20px; 
-}
-.services__nav-li {
-    text-align: center;
-    
-}
+
 /* projet */
 
 .projet {
@@ -424,54 +392,109 @@ main {
 }
 /* skills */
 .skills {
-    padding: 0 4.5% 10% 4.5%;
+    padding: 4.5%;
     background-color: var(--colorDeux);
+    justify-content: space-between;
+}
+.skills__title-h3 {
+    color: var(--colorDeux)
 }
 .skills__title-h4 {
     background-color: rgba(240, 248, 255, 0.97);
-    border-radius: var(--borderRadius);
     text-align: center;
     color: var(--colorDeux);
     font-size: 30px;
     padding: 2%;
+    margin:0;
+    width: 100%;
     height: 70px;
-    margin-bottom: 40px; 
+    border-radius: 10px 10px 0 0;
+  
+   
 }
 .skills__contenair {
-    width: 100%;
+    width: 49.5%;
     justify-content: space-between;
+    border-radius: var(--borderRadius);
+    background-color: var(--colorTrois);
+   
+   
 }
 .skills__contenair-skills {
     width: 49.5%;
+    border-radius: var(--borderRadius);
+    background-color: var(--colorTrois);
+    
+}
+.skills__title-h5 {
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    color: var(--colorDeux);
+ 
 }
 .skills__nav-ul {
     line-height: 2;
-    color: var(--colorTrois);
+    padding: 0 5% 5% 5%;
     font-size: 18px;
 }
-.skills__nav-ul-prog {
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-.skills__nav-ul-prog li{
-    width: 75px;
-}
-.skills__nav-ul-prog img {
-    width: 100%;
-    height: auto;   
-}
-.skills__nav-ul-logiciel {
-    justify-content: space-around;
-}
-.skills__nav-ul-logiciel li{
-    width: 65px;
-}
-.skills__nav-ul-logiciel img {
-    width: 100%;
-    height: auto;   
-}
 
-/* about */
+
+/* grid */
+.container-grid {  
+   
+   justify-items: center; 
+   align-items: center;
+   padding: 5% 10% 5% 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo-html logo-css logo-js logo-js . ."
+      "logo-php logo-sql logo-js logo-js . ."
+      "logo-figma logo-figma logo-visual logo-notion . ."
+      "logo-figma logo-figma logo-github logo-git . .";
+  }
+  
+  .logo-js { grid-area: logo-js; }
+  
+  .logo-html { grid-area: logo-html; }
+  
+  .logo-css { grid-area: logo-css; }
+  
+  .logo-php { grid-area: logo-php; }
+  
+  .logo-sql { grid-area: logo-sql; }
+  
+  .logo-visual { grid-area: logo-visual; }
+  
+  .logo-figma { grid-area: logo-figma; }
+  
+  .logo-notion { grid-area: logo-notion; }
+  
+  .logo-github { grid-area: logo-github; }
+  
+  .logo-git { grid-area: logo-git; }
+  
+  .container-grid img {
+    width: 100%;
+    height: auto;
+  }
+  .logo-figma {
+    width: 30%;
+  }
+  .logo-js {
+    width: 30%;
+  }
+  .logo-html, .logo-css,  .logo-php, .logo-sql {
+    width: 60%;
+  }
+  .logo-notion, .logo-github, .logo-git, .logo-visual {
+    width: 50%;
+
+  }   
+/* about */ 
 .about {
     padding: 0 4.5% 5% 4.5%;
 }
@@ -491,11 +514,13 @@ main {
 }
 .about__container-img {
     text-align: center;
+    
     width: 45%;
 }
 .about__container-img img {
     width: 400px;
     height: auto;
+    border-radius: var(--borderRadius);
 }
 
 

@@ -1,0 +1,39 @@
+[
+    {
+        "nom": "Projet1",
+        "images": 
+        [ 
+            { 
+            "adresse": "nomdelimage1",
+            "alt": "description"
+            },
+            { 
+            "adresse": "nomdelimage2",
+            "alt": "description"
+            },
+            { 
+            "adresse": "nomdelimage2",
+            "alt": "description"
+            }
+        ],
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam inventore saepe perspiciatis eius. Expedita illum illo quas excepturi explicabo porro iste aliquid quisquam, debitis veniam dignissimos delectus, quod necessitatibus provident!",
+        "role": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam inventore saepe perspiciatis eius. Expedita illum illo quas excepturi explicabo porro iste aliquid quisquam, debitis veniam dignissimos delectus, quod necessitatibus provident!",
+        "technos":
+        [ 
+            { 
+            "adresse": "logo-js.png",
+            "alt": "Logo"
+            },
+            { 
+            "adresse": "logo-js.png",
+            "alt": "Logo"
+            },
+            { 
+            "adresse": "logo-js.png",
+            "alt": "Logo"
+            }
+        ],
+        "commanditaire": "Lorem ipsum dolor"
+    }
+    
+]

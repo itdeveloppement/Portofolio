@@ -37,7 +37,7 @@
     --inconcolataFont: "Inconsolata", monospace;
     --sourceCodePro: "Source Code Pro", monospace;
     /* border radius*/
-    --borderRadius: 5px;
+    --borderRadius: 0px;
 }
 body {
     background-color: var(--colorUn);
@@ -85,10 +85,21 @@ main {
     padding: 5% 0 5% 0;
 }
 .title-h4 {
+    width: 100%;
     margin-bottom: 20px;
     font-size: 30px;
 }
+.title-h5 {
+    width: 100%;
+    font-size: 18px;
+    margin: 20px 0;
+}
+/* images */
 
+img {
+    width: 100%;
+    height: auto;
+}
 /*HEADER*/
 .nav-ul {
     list-style: none;
@@ -168,10 +179,9 @@ main {
 
 /* HERO */
 .hero { 
-    
-    background-color: var(--colorUn);
     width: 100%;
     height: 100vh;
+    background: linear-gradient(to bottom right, var(--colorUn), #675d5d); 
 }
 
 /* hero accroche */
@@ -180,6 +190,7 @@ main {
     align-content: center;
     padding: 2%;
 }
+
 
 .hero__title-h1{
     color: var(--colorTrois);
@@ -216,11 +227,12 @@ main {
     height: 100vh;
 
 }
+/*
 .hero__images-img {   
     width: 100%; 
     height: auto;
 }
-
+*/
 /* animation texte */ 
 @keyframes colorFade {
     0% {
@@ -232,6 +244,13 @@ main {
     100% {
         opacity: 1;
     }
+}
+/* hero 2 */
+.hero2__images {
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    filter: sepia(100%) hue-rotate(75deg);
 }
 
 /* services */
@@ -377,7 +396,6 @@ main {
     color: var(--colorDeux);
     padding: 2%;
     margin:0;
-    width: 100%;
     height: 70px;
     border-radius: 10px 10px 0 0;
 }
@@ -397,16 +415,22 @@ main {
     color: var(--colorDeux);
 }
 .skills__nav-ul {
+    width: 100%;
     line-height: 2;
     padding: 0 5% 5% 5%;
     font-size: 18px;
 }
+.skills__nav-li {
+    padding-left: 4%;
+}
 
 
 /* grid */
-.container-grid {  
+.container-grid { 
+     
     padding: 5%;
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 5px 5px;
@@ -437,18 +461,19 @@ main {
   
   .logo-git { grid-area: logo-git; }
   
+  /*
   .container-grid img {
     width: 100%;
     height: auto;
   }
-
+*/
   .logo-html, .logo-css, .logo-php, .logo-sql {
-    width: 70%;
+    width: 60%;
+  
   }
   .logo-notion, .logo-github, .logo-git, .logo-visual, .logo-figma, .logo-js {
-    width: 50%;
-
-  }   
+    width: 40%;  
+  }  
 /* about */ 
 .about {
     padding: 0 4.5% 5% 4.5%;
@@ -474,6 +499,38 @@ main {
     height: auto;
     border-radius: var(--borderRadius);
 }
+
+/* PAGE PROJET */
+
+
+
+/* section slide */
+.page-projet {
+    position: relative;
+    top:70px;
+    padding: 4.5%;
+}
+.pjt-slide {
+    gap:10px;
+}
+.pjt-slide__container-img {
+    width: 300px;
+}
+/* section description */
+.pjt-description {
+    justify-content: space-between;
+    gap:20px;
+}
+.ptj-description__description {
+   width: 23%; 
+}
+.ptj-description__techno {
+    gap:20px
+}
+.techno__logo {
+    width: 40px;
+}
+
 
 /*FOOTER*/
 /* contact */

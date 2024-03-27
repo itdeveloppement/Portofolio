@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- titre max 55/65 caracteres -->
-    <title>Developpeur Full Stack</title>
+    <title>Concéption d'applications web</title>
     <!-- meta description max 160 caracteres -->
     <meta name="description" content="Ma description">
     <!-- link css swiper-->
@@ -19,9 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-
-    <!--link framework-->
     
+</head>
 <body>
     <!-- HEADER -->
     <header>
@@ -29,11 +28,12 @@
             <!-- navigation centrale-->
             <nav class="nav-central">
                 <ul class="nav-ul header__nav-ul flex">
-                    <li class="nav-li header__li"><a class="link header__link" href=""># services</a></li>
-                    <li class="nav-li header__li"><a class="link header__link" href=""># travail recent</a></li>
-                    <li class="nav-li header__li"><a class="link  header__link" href=""># competences</a></li>
-                    <li class="nav-li header__li"><a class="link header__link" href=""># about me</a></li>
-                    <li class="nav-li header__li"><a class="link  header__link" href=""># contact</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#accueil"># accueil</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#services"># services</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#traveaux"># travail recent</a></li>
+                    <li class="nav-li header__li"><a class="link  header__link" href="http://127.0.0.1:5502/index.html#competences"># competences</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#about"># about me</a></li>
+                    <li class="nav-li header__li"><a class="link  header__link" href="http://127.0.0.1:5502/index.html#contact"># contact</a></li>
                 </ul>
             </nav>
             <!-- nav droite -->
@@ -56,11 +56,12 @@
             <!-- nav haut -->
             <nav class="nav-height">
                 <ul class="nav-ul header__nav-ul flex">
-                    <li class="nav-li header__li"><a class="link header__link" href=""># services</a></li>
-                    <li class="nav-li header__li"><a class="link header__link" href=""># travail recent</a></li>
-                    <li class="nav-li header__li"><a class="link  header__link" href=""># competences</a></li>
-                    <li class="nav-li header__li"><a class="link header__link" href=""># about me</a></li>
-                    <li class="nav-li header__li"><a class="link  header__link" href=""># contact</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#accueil"># accueil</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#services"># services</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#traveaux"># travail recent</a></li>
+                    <li class="nav-li header__li"><a class="link  header__link" href="http://127.0.0.1:5502/index.html#competences"># competences</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#about"># about me</a></li>
+                    <li class="nav-li header__li"><a class="link  header__link" href="http://127.0.0.1:5502/index.html#contact"># contact</a></li>
                 </ul>
             </nav>
         </section>
@@ -68,38 +69,39 @@
 
     <!-- MAIN -->
     <main>
-        <!-- hero accroche -->
-        <section class="hero flex">
+        <!-- hero -->
+        <section class="hero flex" id="accueil">
             <!-- accroche -->
-            <div class="hero__titre flex">
+            <div class="hero__titre flex conteneur">
+                <div class="lumiere"></div>
                 <h1 class="title-h1 hero__title-h1">Conception<br> d'applications web ●</h1>
                 <p class="para hero__para">Marti Castellano ▲</p>
                 <a class="link hero__address__link" href="mailto:exemple@contact.com"><p class="para hero__address__para">@ contact</p></a>
             </div>
             <!-- image -->
             <div class="hero__images"> 
-                <img class="hero__images-img" src="./assets/images/banniere4.jpeg">
+                <img class="hero__images-img" src="./assets/images/banniere.jpeg">
             </div>
         </section>
         <!-- services -->
-        <section class="services flex">
+        <section class="services flex" id="services">
             <h3 class="title-h3 services__title-h3">▲ Services</h3>
             <div class="services__container">
-                <h4 class="title-h4 services__title-h4">Sites d'entreprise et e-commerce.</h4>
+                <h4 class="title-h4 services__title-h4">Creation de sites d'entreprise et de e-commerce.</h4>
             </div>
             <div class="services__container">
                 <div class="services__container-img-text"> 
-                <h4 class="title-h4 services__title-h4">Experiences utilisateurs, naturelle et esthetique.</h4>
+                <h4 class="title-h4 services__title-h4">Forte prise en compte de l'experiences utilisateurs.</h4>
                 </div>
             </div>
             <div class="services__container">
                 <div class="services__container-img-text"> 
-                    <h4 class="title-h4 services__title-h4">Referencement et accessibilité.</h4>
+                    <h4 class="title-h4 services__title-h4">Optimiser le référencement et l'accessibilité.</h4>
                 </div>
             </div>
         </section>
         <!-- projet -->
-        <section class="projet">
+        <section class="projet" id="traveaux">
             <h3 class="title-h3 projet__title-h3">▲ travail recent</h3>
             <!-- card 1 -->
             <div class="container projet__container flex">
@@ -108,7 +110,7 @@
                     <p class="container__filter-fix container__filter-bgk-1">Men Sportwear</p>
                     <div class="container__filter-moove  container__filter-opa-1 container__filter-display flex">
                         <p>Vente d'arcticles de sport pour homme.</p>
-                        <a class="container__filter-btn-moove link" href="">Voir le site</a>
+                        <a class="container__filter-btn-moove link" href="http://127.0.0.1:5502/projets.html">Voir le site</a>
                     </div>
                 </div>
                 <!-- card 2 -->
@@ -162,24 +164,24 @@
             </div>
         </section> 
         <!-- Skills -->
-        <section class="skills flex">
+        <section class="skills flex" id="competences">
             <div class="skills__contenair flex">
                 <h4 class="title-h4 skills__title-h4">▲ Mes competences</h4>
                 <ul class="nav-ul skills__nav-ul">
                     <ul class="nav-ul">
                         <h5 class="title-h5 skills__title-h5">Design d'interface</h5>
-                        <li class="nav-li">Collecte et analyse des besoins des utilisateurs</li>
-                        <li class="nav-li">Création des profils et du parcours utilisateur</li>
-                        <li class="nav-li">Elaboration et test du prototype de l'application</li>
+                        <li class="nav-li skills__nav-li">Collecte et analyse des besoins des utilisateurs</li>
+                        <li class="nav-li skills__nav-li">Création des profils et du parcours utilisateur</li>
+                        <li class="nav-li skills__nav-li">Elaboration et test du prototype de l'application</li>
                     </ul>
                     <h5 class="title-h5 skills__title-h5">Programmation et déploiement</h5>
                     <ul class="nav-ul">
-                        <li class="nav-li">Programmation back-end et front-end</li>
+                        <li class="nav-li skills__nav-li">Programmation back-end et front-end</li>
                     </ul>
                     <h5 class="title-h5 skills__title-h5">Référencement et accessibilité</h5>
                     <ul class="nav-ul">
-                        <li class="nav-li">Operationalisation des balises sémantiques</li>
-                        <li class="nav-li">Mise en place Shema.org</li>
+                        <li class="nav-li skills__nav-li">Operationalisation des balises sémantiques</li>
+                        <li class="nav-li skills__nav-li">Mise en place Shema.org</li>
                     </ul>
                 </ul>
             </div>
@@ -202,7 +204,7 @@
             </div>
         </section>
         <!-- About me -->
-        <section class="about">
+        <section class="about" id="about">
             <h3 class="title-h3 about__title-h3">▲ About me</h3>
             <div class="about__container flex">
                 <div class="about__container-para" >
@@ -217,15 +219,16 @@
         </section>
     </main>
     <!-- FOOTER -->
-    <footer class="footer flex">
+    <footer class="footer flex" id="contact">
         <nav class="footer__nav" >
             <h4 class="title-h4 footer__title-h4">Navigation</h4>
             <ul class="nav-ul footer__nav-ul">
-                <li class="nav-li"><a class="link" href=""># services</a></li>
-                <li class="nav-li"><a class="link" href=""># travail recent</a></li>
-                <li class="nav-li"><a class="link" href=""># compétences</a></li>
-                <li class="nav-li"><a class="link" href=""># about me</a></li>
-                <li class="nav-li"><a class="link" href=""># contact</a></li>
+                <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#accueil"># accueil</a></li>
+                <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#services"># services</a></li>
+                <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#traveaux"># travail recent</a></li>
+                <li class="nav-li header__li"><a class="link  header__link" href="http://127.0.0.1:5502/index.html#competences"># competences</a></li>
+                <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#about"># about me</a></li>
+                <li class="nav-li header__li"><a class="link  header__link" href="http://127.0.0.1:5502/index.html#contact"># contact</a></li>
             </ul>
         </nav>
         <address class="address footer__address">

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titre max 55/65 caracteres -->
+    <title>Concéption d'applications web</title>
+    <!-- meta description max 160 caracteres -->
+    <meta name="description" content="Ma description">
+    <!-- link css swiper-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
+      <!-- link css hambergers-->
+      <link rel="stylesheet" href="./assets/css/hamburgers.css"/>
+    <!-- link css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!--link font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <!--link framework-->
+</head> 
+ 
+<body>
+    <!-- HEADER -->
+    <header>
+        <section class="nav-bar flex">
+            <!-- navigation centrale-->
+            <nav class="nav-central">
+                <ul class="nav-ul header__nav-ul flex">
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#accueil">Accueil</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#services">Services</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#traveaux">Projets</a></li>
+                    <li class="nav-li header__li"><a class="link  header__link" href="http://127.0.0.1:5502/index.html#competences">Competences</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#about">About me</a></li>
+                    <li class="nav-li header__li"><a class="link  header__link" href="http://127.0.0.1:5502/index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- nav droite -->
+            <nav class="nav-right">
+                <!-- changer la typo -->
+                <button id="btn-typo" type="button">Changer la typo</button>
+            </nav>
+
+            <!-- burger import burger Collapse -->
+            <button class="header-burger header-burger--is-open hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button> 
+        </section>
+        <!-- modale menu-->
+        <section class="header-modal">
+            <!-- changer la typo -->
+            <button id="btn-typo" type="button">Changer la typo</button>
+            <!-- nav haut -->
+            <nav class="nav-height">
+                <ul class="nav-ul header__nav-ul flex">
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#accueil">Accueil</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#services">Services</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#traveaux">Projets</a></li>
+                    <li class="nav-li header__li"><a class="link  header__link" href="http://127.0.0.1:5502/index.html#competences">Competences</a></li>
+                    <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#about">About me</a></li>
+                    <li class="nav-li header__li"><a class="link  header__link" href="http://127.0.0.1:5502/index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section class="page-projet container-1200">
+            <!-- affichage avec JS
+            <h2 class="title-h4">${data.nameProjet}</h2>
+            <p>${data.presentationProjet}</p>
+            <section class="pjt-slide flex">
+                ${templateImages (datasProjet)}
+            </section>
+            <section class="pjt-description flex">
+                <div class="ptj-description__description">
+                    <h5 class="title-h5">Contexte</h5>
+                    <p>${data.contexte}</p>
+                </div>
+                <div class="ptj-description__description">
+                    <h5 class="title-h5">Mon rôle</h5>
+                    <p>${data.role}</p>
+                </div>
+                <div class="ptj-description__description ptj-description__techno flex">
+                    <h5 class="title-h5">Technologies utilisées</h5>
+                    ${templateTechnos (datasProjet)}
+                </div>
+                <div class="ptj-description__description">
+                    <h5 class="title-h5">Commanditaire</h5>
+                    <p>${data.commanditaire}</p>
+                </div>
+            </section> -->
+        </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="footer flex" id="contact">
+        <nav class="footer__nav" >
+            <h4 class="title-h4 footer__title-h4">Navigation</h4>
+            <ul class="nav-ul footer__nav-ul">
+                <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#accueil">Accueil</a></li>
+                <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#services">Services</a></li>
+                <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#traveaux">Projets</a></li>
+                <li class="nav-li header__li"><a class="link  header__link" href="http://127.0.0.1:5502/index.html#competences">Competences</a></li>
+                <li class="nav-li header__li"><a class="link header__link" href="http://127.0.0.1:5502/index.html#about">About me</a></li>
+                <li class="nav-li header__li"><a class="link  header__link" href="http://127.0.0.1:5502/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <address class="address footer__address">
+            <h4 class="title-h4 footer__title-h4">Contact</h4>
+            <a class="link footer-adresse__link" href="mailto:exemple@contact.com">exemple@contact.com</a>
+        </address>
+        <p class="footer__mentions">Marti Castellano 2024 ©</p>
+    </footer>
+        
+    <!-- lien fichier js-->
+    <script src="./assets/js/projet.js" defer></script>
+</body>
+</html>

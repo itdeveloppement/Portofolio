@@ -37,66 +37,82 @@ function openModal () {
 
 // FILTRE SECTION TRAVAIL RECENT
 
-/* card 1 */
+/* card 1 
 document.querySelector(".container__card-1").addEventListener("mouseover",() => {
   document.querySelector(".container__filter-opa-1").style.opacity = '1';
+  document.querySelector(".container__filter-opa-1").style.transition = 'opacity 0.5s ease';
 });
 document.querySelector(".container__card-1").addEventListener("mouseout",() => {
   document.querySelector(".container__filter-opa-1").style.opacity = '0';
-});
-/* card 2 */
+}); */
+/* card 2
 document.querySelector(".container__card-2").addEventListener("mouseover",() => {
   document.querySelector(".container__filter-opa-2").style.opacity = '1';
+  document.querySelector(".container__filter-opa-2").style.transition = 'opacity 0.5s ease';
 });
+
 document.querySelector(".container__card-2").addEventListener("mouseout",() => {
   document.querySelector(".container__filter-opa-2").style.opacity = '0';
-});
-/* card 3 */
-document.querySelector(".container__card-3").addEventListener("mouseover",() => {
-  document.querySelector(".container__filter-opa-3").style.opacity = '1';
-});
-document.querySelector(".container__card-3").addEventListener("mouseout",() => {
-  document.querySelector(".container__filter-opa-3").style.opacity = '0';
-});
-/* card 4 */
-document.querySelector(".container__card-4").addEventListener("mouseover",() => {
-  document.querySelector(".container__filter-opa-4").style.opacity = '1';
-});
-document.querySelector(".container__card-4").addEventListener("mouseout",() => {
-  document.querySelector(".container__filter-opa-4").style.opacity = '0';
-});
-/* card 5 */
-document.querySelector(".container__card-5").addEventListener("mouseover",() => {
-  document.querySelector(".container__filter-opa-5").style.opacity = '1';
-});
-document.querySelector(".container__card-5").addEventListener("mouseout",() => {
-  document.querySelector(".container__filter-opa-5").style.opacity = '0';
-});
-/* card 6 */
-document.querySelector(".container__card-6").addEventListener("mouseover",() => {
-  document.querySelector(".container__filter-opa-6").style.opacity = '1';
-});
-document.querySelector(".container__card-6").addEventListener("mouseout",() => {
-  document.querySelector(".container__filter-opa-6").style.opacity = '0';
-});
-/* card 7 */
-document.querySelector(".container__card-7").addEventListener("mouseover",() => {
-  document.querySelector(".container__filter-opa-7").style.opacity = '1';
-});
-document.querySelector(".container__card-7").addEventListener("mouseout",() => {
-  document.querySelector(".container__filter-opa-7").style.opacity = '0';
-});
-/* card 8 */
-document.querySelector(".container__card-8").addEventListener("mouseover",() => {
-  document.querySelector(".container__filter-opa-8").style.opacity = '1';
-});
-document.querySelector(".container__card-8").addEventListener("mouseout",() => {
-  document.querySelector(".container__filter-opa-8").style.opacity = '0';
-});
-/* card 9 */
-document.querySelector(".container__card-9").addEventListener("mouseover",() => {
-  document.querySelector(".container__filter-opa-9").style.opacity = '1';
-});
-document.querySelector(".container__card-9").addEventListener("mouseout",() => {
-  document.querySelector(".container__filter-opa-9").style.opacity = '0';
-});
+});  */
+
+
+//AFFICHAGE LES CARD PROJET 
+
+// recuperation des données au format json
+fetch("./assets/json/projets.json")
+.then (response=>{
+    return response.json()
+})
+.then (response=>{
+  templateProjet (response) 
+    console.log(response)
+})
+
+/** affiche le template projet
+ * 
+ * @param {Objet} tabProduitReference 
+ */
+function templateProjet (datasProjet) {
+  // code a reprendre car pas besoin de passer la ref de projet en parametre // faire en css avec un hover     
+
+  template='';
+  datasProjet.forEach(data=>{
+ 
+  template += 
+  `
+    <div class="container__card container__card-${data.refProjet} large-4 medium-12" onmouseover="styleOpacityOver('${data.refProjet}')" onmouseout="styleOpacityOut('${data.refProjet}')" >
+        <img src="./assets/images/projets/${data.images[0].name}">
+        <div class="container__filter-fix container__filter-bgk-3"><p class="container__filter-fix-para">${data.nameProjet}</p></div>
+        <div class="container__filter-moove  container__filter-opa-${data.refProjet} container__filter-display flex">
+            <p class="container__filter-para-moove">${data.presentationProjet}</p>
+            <a class="container__filter-btn-moove link" href="http://127.0.0.1:5502/projet.html?ref=${data.refProjet}">Decouvrir le projet</a>
+        </div>
+    </div>
+  `
+}); 
+  // ciblage et creation dom
+  let projet = document.querySelector(".projet__container");
+  console.log(template)
+  console.log(projet)
+  projet.innerHTML = template;
+
+}
+// 
+/** definit dans le html le style opacity et transition
+ * 
+ * @param {string} refProjet la reference du projet
+ */
+function styleOpacityOver(refProjet) {
+  console.log(refProjet)
+  document.querySelector(`.container__filter-opa-${refProjet}`).style.opacity = '1';
+  document.querySelector(`.container__filter-opa-${refProjet}`).style.transition = 'opacity 0.8s ease';
+}
+/** definit dans le html le style opacity et transition
+ * 
+ * @param {string} refProjet la reference du projet
+ */
+function styleOpacityOut(refProjet) {
+  console.log(refProjet)
+  document.querySelector(`.container__filter-opa-${refProjet}`).style.opacity = '0';
+  document.querySelector(`.container__filter-opa-${refProjet}`).style.transition = 'opacity 0.8s ease';
+}

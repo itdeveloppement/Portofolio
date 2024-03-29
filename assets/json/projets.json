@@ -94,6 +94,90 @@
             }
         ],
         "commanditaire": "Centre de formation WeBecome (Saint Etienne)."
+    },
+    {
+        "refProjet": "PO_2024_000003",
+        "nameProjet": "Application météo",
+        "presentationProjet": "Meteo en temps réel et lieu geolocalisé",
+        "images": 
+        [ 
+            { 
+            "name": "meteo-meteo.png",
+            "alt": "description"
+            },
+            { 
+            "name": "meteo-icons.png",
+            "alt": "description"
+            },
+            { 
+            "name": "meteo-vent.png",
+            "alt": "description"
+            }
+        ],
+        "contexte": "Projet réalisé dans le cadre de la formation développeur web et web mobile chez WeBecome",
+        "role": "Integration de la maquette : HTML et CSS et dynamisation des pages en Java Script. Mise en lien avec l'API api.open-meteo.com",
+        "technos":
+        [ 
+            { 
+            "name": "logo-html.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-css.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-js.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-github.png",
+            "alt": "Logo"
+            }
+        ],
+        "commanditaire": "Centre de formation WeBecome (Saint Etienne)."
+    },
+    {
+        "refProjet": "PO_2024_000004",
+        "nameProjet": "Application météo",
+        "presentationProjet": "Meteo en temps réel et lieu geolocalisé",
+        "images": 
+        [ 
+            { 
+            "name": "meteo-meteo.png",
+            "alt": "description"
+            },
+            { 
+            "name": "meteo-icons.png",
+            "alt": "description"
+            },
+            { 
+            "name": "meteo-vent.png",
+            "alt": "description"
+            }
+        ],
+        "contexte": "Projet réalisé dans le cadre de la formation développeur web et web mobile chez WeBecome",
+        "role": "Integration de la maquette : HTML et CSS et dynamisation des pages en Java Script. Mise en lien avec l'API api.open-meteo.com",
+        "technos":
+        [ 
+            { 
+            "name": "logo-html.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-css.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-js.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-github.png",
+            "alt": "Logo"
+            }
+        ],
+        "commanditaire": "Centre de formation WeBecome (Saint Etienne)."
     }
  
 ]

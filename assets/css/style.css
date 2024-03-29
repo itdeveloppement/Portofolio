@@ -280,7 +280,7 @@ img {
     position: relative;
     top: 70px;
     width: 100%;
-    background-image: url("../images/bannieres1.jpg");
+    background-image: url("../images/banniere.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -344,33 +344,12 @@ img {
     font-size: 30px;
     padding: 2%;
 }
-.container__filter-bgk-1 {
+.container__filter-bgk {
     background-color: rgba(253, 212, 159, 0.413);
 }
-.container__filter-bgk-2 {
-    background-color: rgba(253, 212, 159, 0.413);
-}
-.container__filter-bgk-3 {
-    background-color: rgba(253, 212, 159, 0.413);
-}
-.container__filter-bgk-4 {
-    background-color: rgba(67, 214, 35, 0.8);
-}
-.container__filter-bgk-5 {
-    background-color: rgba(142, 173, 3, 0.8);
-}
-.container__filter-bgk-6 {
-    background-color: rgba(107, 4, 97, 0.716);
-}
-.container__filter-bgk-7 {
-    background-color: rgba(44, 35, 214, 0.8);
-}
-.container__filter-bgk-8 {
-    background-color: rgba(127, 143, 54, 0.8);
-}
-.container__filter-bgk-9 {
-    background-color: rgba(54, 24, 51, 0.716);
-}
+
+
+
 .container__filter-display {
     display: none;
 }
@@ -388,44 +367,17 @@ img {
     color: var(--colorTrois);
     font-size: 40px;
     padding: 5%;
-    background-color: #043949f0
+    background-color:var(--colorUn)
 }
-.container__filter-opa-1 { 
+.container__filter-moove{
     opacity: 0;
+}
+/*
+.container__filter-opa { 
+    
     transition: opacity 0.8s ease;
 }
-.container__filter-opa-2 { 
-    opacity: 0;
-    transition: opacity 0.8s ease;
-}
-.container__filter-opa-3 { 
-    opacity: 0;
-    transition: opacity 0.8s ease;
-}
-.container__filter-opa-4 { 
-    opacity: 0;
-    transition: opacity 0.8s ease;
-}
-.container__filter-opa-5 { 
-    opacity: 0;
-    transition: opacity 0.8s ease;
-}
-.container__filter-opa-6 { 
-    opacity: 0;
-    transition: opacity 0.8s ease;
-}
-.container__filter-opa-7 { 
-    opacity: 0;
-    transition: opacity 0.8s ease;
-}
-.container__filter-opa-8 { 
-    opacity: 0;
-    transition: opacity 0.8s ease;
-}
-.container__filter-opa-9 { 
-    opacity: 0;
-    transition: opacity 0.8s ease;
-}
+*/
 .container__filter-moove p{
     font-size: 20px;
     text-align: center;
@@ -471,7 +423,7 @@ img {
 }
 .about__container-img {
     height: auto;
-    background-image: url("../images/banniere4.jpeg");
+    background-image: url("../images/about.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }

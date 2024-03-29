@@ -80,3 +80,24 @@ document.querySelector(".container__card-6").addEventListener("mouseover",() => 
 document.querySelector(".container__card-6").addEventListener("mouseout",() => {
   document.querySelector(".container__filter-opa-6").style.opacity = '0';
 });
+/* card 7 */
+document.querySelector(".container__card-7").addEventListener("mouseover",() => {
+  document.querySelector(".container__filter-opa-7").style.opacity = '1';
+});
+document.querySelector(".container__card-7").addEventListener("mouseout",() => {
+  document.querySelector(".container__filter-opa-7").style.opacity = '0';
+});
+/* card 8 */
+document.querySelector(".container__card-8").addEventListener("mouseover",() => {
+  document.querySelector(".container__filter-opa-8").style.opacity = '1';
+});
+document.querySelector(".container__card-8").addEventListener("mouseout",() => {
+  document.querySelector(".container__filter-opa-8").style.opacity = '0';
+});
+/* card 9 */
+document.querySelector(".container__card-9").addEventListener("mouseover",() => {
+  document.querySelector(".container__filter-opa-9").style.opacity = '1';
+});
+document.querySelector(".container__card-9").addEventListener("mouseout",() => {
+  document.querySelector(".container__filter-opa-9").style.opacity = '0';
+});

@@ -84,7 +84,7 @@ function categorieProduit (datas) {
 function templateImages(datasProjet) {
     let templateImage ='';
     datasProjet[0].images.forEach(image => {
-        templateImage  += `<div class="pjt-slide__container-img large-4"><img src="./assets/images/projets/ms/${image.name}" alt="${image.alt}"></div>` 
+        templateImage  += `<div class="pjt-slide__container-img large-4 medium-12"><img src="./assets/images/projets/ms/${image.name}" alt="${image.alt}"></div>` 
     });
     return templateImage
 }
@@ -121,15 +121,15 @@ function templateProjet (datasProjet) {
             <h5 class="title-h5">Contexte</h5>
             <p>${data.contexte}</p>
         </div>
-        <div class="ptj-description__description large-3">
+        <div class="ptj-description__description large-3 medium-12">
             <h5 class="title-h5">Mon rôle</h5>
             <p>${data.role}</p>
         </div>
-        <div class="ptj-description__description ptj-description__techno large-3 flex">
+        <div class="ptj-description__description ptj-description__techno large-3 medium-12 flex">
             <h5 class="title-h5">Technologies utilisées</h5>
             ${templateTechnos (datasProjet)}
         </div>
-        <div class="ptj-description__description large-3">
+        <div class="ptj-description__description large-3 medium-12">
             <h5 class="title-h5">Commanditaire</h5>
             <p>${data.commanditaire}</p>
         </div>

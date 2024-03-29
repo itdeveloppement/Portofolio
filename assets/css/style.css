@@ -240,8 +240,9 @@ img {
 
 /* hero accroche */
 .hero__titre {
-    position: relative;
-    top: -700px;
+    position: absolute;
+    z-index: 1;
+    top: 10%;
     left: 50px;
     align-content: center;
     /* background: linear-gradient(to bottom right, var(--colorUn), #675d5d); */
@@ -275,14 +276,14 @@ img {
 /* hero image */
 
 .hero__images {
+    position: relative;
+    top: 70px;
     width: 100%;
-    height: auto;
+    background-image: url("../images/bannieres1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.hero__images img{
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
+
 
 /* animation texte */ 
 @keyframes colorFade {
@@ -442,33 +443,35 @@ img {
 }
 
 /* about */ 
-.test2 {
+.about-container {
     background-color: black;
-    height: 100vh;
     color: var(--colorTrois);
-    padding: 5% 0 0 0;
+    padding: 5% 0;
+
 }
 .about {
     padding: 0 4.5%;
 }
-.about__container {
-    justify-content: space-between;
-    align-items: center;
+.about__container-info {
+    gap:var(--gutter)
 }
 .about__container-para {
     line-height: 2;
 }
 .about__container-para>p{
-  margin-top: 20px;
+    margin-top: 20px;
 }
-.about__container-img {
-    text-align: center;
-}
-.about__container-img img {
+.about__container-info {
     width: 100%;
     height: auto;
-    border-radius: var(--borderRadius);
 }
+.about__container-img {
+    height: auto;
+    background-image: url("../images/banniere4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /* PAGE PROJET */
 
@@ -508,7 +511,7 @@ img {
 /* contact */
 .footer {
     background-color: var(--colorUn);
-    padding: 2% 5%;
+    padding: 5% 5%;
 }
 .footer__title-h4 {
     color: var(--colorTrois);
@@ -541,6 +544,22 @@ img {
     .header-burger {
         width: 100%;
         text-align: end;
+    }
+
+    /*hero */
+    .hero__titre {
+        top: 250px;
+    }
+     /* about */
+    .about__container-img {
+        height: 400px;
+        order: -1;
+        margin: 50px 0;
+    }
+   
+    /*footer*/
+    .footer__nav, .footer__address {
+        margin-bottom: 50px;
     }
 
     /* largeur des block*/

@@ -27,7 +27,7 @@
 /*VARIABLES COLOR ET STYLE*/
 :root {
     /*variable color*/
-    --colorUn: #2e2a29;
+    --colorUn: #043949;
     --colorDeux: #00b8bb;
     --colorTrois: rgb(250, 250, 250);
     /*variable font*/
@@ -126,11 +126,11 @@ les resolutions d'ecrans*/
 /* title */
 .title-h3 {
     width: 100%;
-    color: var(--colorUn);
+    color: var(--colorTrois);
     font-size: 30px; 
     text-transform: uppercase;
     line-height: 1.2;
-    padding: 8% 0 8% 0;
+    padding: 0% 0 2% 0;
 }
 .title-h4 {
     width: 100%;
@@ -153,10 +153,7 @@ img {
     list-style: none;
 }
 
-header {
-   position: relative;
-    
-}
+
 /* nav bar et modale */
 .nav-bar {
     position: fixed;
@@ -166,7 +163,7 @@ header {
     padding: 0 5%;
     height: 70px;
     z-index: 2;
-    background-color: var(--colorUn);
+    background-color: #043949;
     width: 100%;
    
 }
@@ -194,7 +191,7 @@ header {
     padding: 7px 3px;
     border: 1px solid var(--colorTrois);
     border-radius: var(--borderRadius);
-    background-color: var(--colorUn);
+    background-color: #043949;
     color: var(--colorTrois);
     font-size: 12px;
     width: 120px;
@@ -234,22 +231,25 @@ header {
 /* HERO */
 .hero { 
     width: 100%;
- 
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* hero accroche */
 .hero__titre {
-    width: 50%;
+    position: relative;
+    top: -700px;
+    left: 50px;
     align-content: center;
-    background: linear-gradient(to bottom right, var(--colorUn), #675d5d); 
+    /* background: linear-gradient(to bottom right, var(--colorUn), #675d5d); */
     padding: 2%;
-    height: 100vh;
+    background-color: black;
 }
 
 
 .hero__title-h1{
     color: var(--colorTrois);
-    font-size: 80px; 
+    font-size: 50px; 
     text-transform: uppercase;
     line-height: 1.2; 
     margin-bottom: 10px;
@@ -276,13 +276,16 @@ header {
 /* hero image */
 
 .hero__images {
-    width: 50%;
-    overflow: hidden;
-    height: 100vh;
+    width: 100%;
+    height: auto;
+    
+    
+   
 }
 .hero__images img{
     width: 100%;
     height: auto;
+    object-fit: contain;
 }
 /*
 .hero__images-img {   
@@ -303,28 +306,17 @@ header {
     }
 }
 
-/* services */
-.services {
-    padding: 0% 4.5% 0 4.5%;
-    gap: var(--gutter);
-}
-.services__container {
-    border-radius: var(--borderRadius);
-    background-color: var(--colorUn);
-    color: var(--colorTrois);
-
-}
-
-.services__title-h4  {
-    font-size: 16px;
-    font-weight: normal;
-    margin: 0;
-    padding: 10%;
-}
 /* projet */
-
+.test {
+    background-color: rgb(19, 62, 71);
+    
+    padding: 5% 0;
+}
 .projet {
-    padding: 0 4.5% 0 4.5%;
+    padding: 0 4.5%; 
+}
+.projet__title-h3-para {
+    margin-bottom: 5%;
 }
 .projet__container {
     justify-content: space-between;
@@ -358,7 +350,7 @@ header {
     padding: 5%;
 }
 .container__filter-bgk-1 {
-    background-color: rgba(4, 107, 43, 0.8);
+    background-color: #043949ad
 }
 .container__filter-bgk-2 {
     background-color: rgba(22, 2, 68, 0.8);
@@ -374,7 +366,7 @@ header {
     background-color: rgba(88, 107, 4, 0.8);
 }
 .container__filter-bgk-6 {
-    background-color: rgba(107, 4, 97, 0.8);
+    background-color: rgba(107, 4, 97, 0.716);
 }
 .container__filter-display {
     display: none;
@@ -393,7 +385,7 @@ header {
     color: var(--colorTrois);
     font-size: 40px;
     padding: 5%;
-    background-color: rgba(52, 55, 57, 0.95);
+    background-color: #043949f0
 }
 .container__filter-opa-1 { 
     opacity: 0;
@@ -436,86 +428,22 @@ header {
     color: var(--colorUn);
     border: 2px solid var(--colorUn);
 }
-/* skills */
-.skills {
-    padding: 0 4.5%;
-    justify-content: space-between;
-}
-.skills__title-h3 {
-    color: var(--colorDeux)
-}
-.skills__contenair {
-    width: 49.5%;
-}
-.skills__contenair-skills {
-    width: 49.5%;
-
-}
-.skills__title-h5 {
-    margin: 20px 0 0 0;
-    font-size: 20px;
-    color: var(--colorDeux);
-}
-.skills__nav-ul {
-    width: 100%;
-    line-height: 2;
-}
-.skills__nav-li {
-    padding-left: 4%;
-}
 
 
-/* grid */
-.container-grid { 
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 5px 5px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "logo-html logo-css logo-js logo-php . ."
-      "logo-sql logo-visual logo-github logo-git . ."
-      "logo-figma logo-notion logo-autre1 logo-autre2. .";
-  }
   
-  .logo-js { grid-area: logo-js; }
-  
-  .logo-html { grid-area: logo-html; }
-  
-  .logo-css { grid-area: logo-css; }
-  
-  .logo-php { grid-area: logo-php; }
-  
-  .logo-sql { grid-area: logo-sql; }
-  
-  .logo-visual { grid-area: logo-visual; }
-  
-  .logo-figma { grid-area: logo-figma; }
-  
-  .logo-notion { grid-area: logo-notion; }
-  
-  .logo-github { grid-area: logo-github; }
-  
-  .logo-git { grid-area: logo-git; }
-  
-  /*
-  .container-grid img {
-    width: 100%;
-    height: auto;
-  }
-*/
-  .logo-html, .logo-css, .logo-php, .logo-sql {
-    width: 60%;
-  
-  }
-  .logo-notion, .logo-github, .logo-git, .logo-visual, .logo-figma, .logo-js {
-    width: 40%;  
-  }  
 /* about */ 
-.about {
-    padding: 0 4.5% 5% 4.5%;
+.test2 {
+    background-color: black;
+    height: 100vh;
+    color: var(--colorTrois);
+    padding: 5% 0 0 0;
 }
+.about {
+    padding: 0 4.5%;
+    
+   
+}
+
 .about__container {
     justify-content: space-between;
     align-items: center;
@@ -525,14 +453,15 @@ header {
     line-height: 2;
 }
 .about__container-para>p{
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .about__container-img {
     text-align: center;
     width: 45%;
+   
 }
 .about__container-img img {
-    width: 400px;
+    width: 100%;
     height: auto;
     border-radius: var(--borderRadius);
 }
@@ -540,8 +469,13 @@ header {
 /* PAGE PROJET */
 
 /* section slide */
+.main_projet {
+    background-color:  rgb(19, 62, 71);
+    color: var(--colorTrois);
+}
 .page-projet {
     padding:  100px 4.5%;
+   
 }
 .projet__para {
     margin-bottom: 20px;
@@ -553,7 +487,7 @@ header {
 /* section description */
 .pjt-description {
     margin-top:40px;
-    background-color: var(--colorDeux);
+    background-color: #043949ab
 }
 .ptj-description__description {
     padding: 1% 2% ;
@@ -572,7 +506,7 @@ header {
 /* contact */
 .footer {
     background-color: var(--colorUn);
-    padding: 5% 8%;
+    padding: 2% 5%;
 }
 .footer__title-h4 {
     color: var(--colorTrois);

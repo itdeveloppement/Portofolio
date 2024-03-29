@@ -35,7 +35,6 @@ function openModal () {
     burger.classList.toggle("is-active");
 }
 
-
 // FILTRE SECTION TRAVAIL RECENT
 
 /* card 1 */

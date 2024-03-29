@@ -44,6 +44,8 @@ let urlProjet = document.location.search;
 // recuperation des information dans l'URL apres le =
 let ref = urlProjet.split("=");
 let refProjet= ref[1];
+console.log(refProjet)
+
 
 // recuperation des données au format json
 fetch("./assets/json/projets.json")
@@ -51,7 +53,8 @@ fetch("./assets/json/projets.json")
     return response.json()
 })
 .then (response=>{
-    templateProjet(response);
+    categorieProduit (response) 
+    console.log(response)
 })
 
 /** selectionne tous les elements d'un projet en fonction de son nom
@@ -59,12 +62,14 @@ fetch("./assets/json/projets.json")
  * @param {Objet} data 
  */
 function categorieProduit (datas) {
+    console.log (datas);
     // tableau pour recuperer les elements d'un projet 
     let tabEltProjet = [];
     // boucle sur les données json
     datas.forEach(projet => {
     // projet venant des données json
     let nomProjet = projet.refProjet;
+    console.log (nomProjet);
     // si valeur de la chaine current est inclus dans la chaine du tableau json
     if (nomProjet.includes(refProjet)){
         // rempli le tableau avec tous les elements de ce projet
@@ -84,7 +89,7 @@ function categorieProduit (datas) {
 function templateImages(datasProjet) {
     let templateImage ='';
     datasProjet[0].images.forEach(image => {
-        templateImage  += `<div class="pjt-slide__container-img large-4 medium-12"><img src="./assets/images/projets/ms/${image.name}" alt="${image.alt}"></div>` 
+        templateImage  += `<div class="pjt-slide__container-img large-4 medium-12"><img src="./assets/images/projets/${image.name}" alt="${image.alt}"></div>` 
     });
     return templateImage
 }
@@ -111,27 +116,27 @@ function templateProjet (datasProjet) {
 
     template = 
     `
-    <h4 class="title-h4">${data.nameProjet}</h4>
+    <h4 class="title-h4 projet__title-h4">${data.nameProjet}</h4>
     <p class="projet__para">${data.presentationProjet}</p>
     <section class="pjt-slide flex">
         ${templateImages (datasProjet)}
     </section>
     <section class="pjt-description flex">
-        <div class="ptj-description__description large-3">
-            <h5 class="title-h5">Contexte</h5>
-            <p>${data.contexte}</p>
+        <div class="ptj-description__description large-3 medium-12">
+            <h5 class="title-h5 description__title-h5">Mon rôle</h5>
+            <p class="description_para">${data.role}</p>
         </div>
         <div class="ptj-description__description large-3 medium-12">
-            <h5 class="title-h5">Mon rôle</h5>
-            <p>${data.role}</p>
+            <h5 class="title-h5 description__title-h5">Contexte</h5>
+            <p class="description_para">${data.contexte}</p>
         </div>
         <div class="ptj-description__description ptj-description__techno large-3 medium-12 flex">
-            <h5 class="title-h5">Technologies utilisées</h5>
+            <h5 class="title-h5 description__title-h5">Technologies utilisées</h5>
             ${templateTechnos (datasProjet)}
         </div>
         <div class="ptj-description__description large-3 medium-12">
-            <h5 class="title-h5">Commanditaire</h5>
-            <p>${data.commanditaire}</p>
+            <h5 class="title-h5 description__title-h5">Commanditaire</h5>
+            <p class="description_para">${data.commanditaire}</p>
         </div>
     </section>
     `

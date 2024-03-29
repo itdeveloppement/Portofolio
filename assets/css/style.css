@@ -31,6 +31,7 @@
     --colorDeux: rgb(19, 62, 71);
     --colorTrois: rgb(250, 250, 250);
     --colorQuatre: black;
+    --colorCinq: rgba(255, 255, 255, 0.891);
     /*variable font*/
     --typoAccLuciole:'Luciole', sans-serif;
     --lucioleFont: 'Luciole', sans-serif;
@@ -334,22 +335,23 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none;
-   border-radius: var(--borderRadius);
-    /* titre */
-    color: var(--colorTrois);
-    font-size: 40px;
-    padding: 5%;
+}
+.container__filter-fix-para {
+    width: 100%;
+    text-align: center;
+    color: var(--colorQuatre);
+    background-color: var(--colorCinq);
+    font-size: 30px;
+    padding: 2%;
 }
 .container__filter-bgk-1 {
-    background-color: #081cf3ad;
+    background-color: rgba(253, 212, 159, 0.413);
 }
 .container__filter-bgk-2 {
-    background-color: rgba(60, 7, 184, 0.8);
+    background-color: rgba(253, 212, 159, 0.413);
 }
 .container__filter-bgk-3 {
-    background-color: rgba(4, 107, 43, 0.8);
-    background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.5), rgba(0, 255, 0, 0.5)); 
+    background-color: rgba(253, 212, 159, 0.413);
 }
 .container__filter-bgk-4 {
     background-color: rgba(67, 214, 35, 0.8);
@@ -441,7 +443,9 @@ img {
     color: var(--colorUn);
     border: 2px solid var(--colorUn);
 }
-
+.container__filter-para-moove {
+    width: 100%;
+}
 /* about */ 
 .about-container {
     background-color: black;
@@ -489,18 +493,30 @@ img {
 .pjt-slide {
     gap: var(--gutter);
 }
+.pjt-slide__container-img {
+    
+    overflow: hidden;
+}
 
 /* section description */
 .pjt-description {
     margin-top:40px;
-    background-color: #043949ab
+    background-color: var(--colorCinq)
 }
 .ptj-description__description {
     padding: 1% 2% ;
 }
 .ptj-description__techno {
-    justify-content: space-around;
+    justify-content: space-between;
     gap:20px;
+}
+.description__title-h5 {
+    color:var(--colorQuatre);
+}
+.description_para {
+    line-height: 1.3;
+    font-size: 16px;
+    color:var(--colorQuatre);
 }
 .techno__logo {
     width: 40px;

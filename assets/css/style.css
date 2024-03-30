@@ -508,6 +508,10 @@ img {
     color: var(--colorTrois);
     text-align: end;
 }
+.footer__address {
+    margin-bottom: 20px;
+}
+
 
 /* responsive*/
 
@@ -541,7 +545,7 @@ img {
     }
    
     /*footer*/
-    .footer__nav, .footer__address {
+    .footer__nav-left, .footer__address {
         margin-bottom: 50px;
     }
 

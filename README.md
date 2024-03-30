@@ -13,9 +13,9 @@ taille des image projet : 1157 * 702
 **a faire**
 
 - un formulaire contact
-- ameliorer la navigation du retour de la page proojet
+- ameliorer la navigation du retour de la page projet
 - integrer des projets
-- ajouter le lien vers linkedin et git hub
+- ouverture nav bar a droite
 - dans les pages projet au click agrandir l'image
 - seo : travailler la description + les balise change.org
 - acc : reprendre tous alt avec description

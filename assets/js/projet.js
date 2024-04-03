@@ -106,8 +106,8 @@ function templateTechnos (datasProjet) {
 
 }
 /** affiche le template projet
- * 
- * @param {array} tabProduitReference 
+ * @param {array} tabProduitReference  tous les elements d'un projet
+ * @return nothing
  */
 function templateProjet (datasProjet) {
         

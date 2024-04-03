@@ -85,15 +85,13 @@ function templateProjet (datasProjet) {
         <div class="container__filter-fix container__filter-bgk-3"><p class="container__filter-fix-para">${data.nameProjet}</p></div>
         <div class="container__filter-moove  container__filter-opa-${data.refProjet} container__filter-display flex">
             <p class="container__filter-para-moove">${data.presentationProjet}</p>
-            <a class="container__filter-btn-moove link" href="http://127.0.0.1:5502/projet.html?ref=${data.refProjet}">Decouvrir le projet</a>
+            <a class="container__filter-btn-moove link" href="https://itdeveloppement.github.io/Portofolio/projet.html?ref=${data.refProjet}">Decouvrir le projet</a>
         </div>
     </div>
   `
 }); 
   // ciblage et creation dom
   let projet = document.querySelector(".projet__container");
-  console.log(template)
-  console.log(projet)
   projet.innerHTML = template;
 
 }

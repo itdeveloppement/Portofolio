@@ -44,7 +44,7 @@ let urlProjet = document.location.search;
 // recuperation des information dans l'URL apres le =
 let ref = urlProjet.split("=");
 let refProjet= ref[1];
-console.log(refProjet)
+
 
 
 // recuperation des données au format json
@@ -54,7 +54,6 @@ fetch("./assets/json/projets.json")
 })
 .then (response=>{
     categorieProduit (response) 
-    console.log(response)
 })
 
 /** selectionne tous les elements d'un projet en fonction de son nom
@@ -62,22 +61,18 @@ fetch("./assets/json/projets.json")
  * @param {Objet} data 
  */
 function categorieProduit (datas) {
-    console.log (datas);
     // tableau pour recuperer les elements d'un projet 
     let tabEltProjet = [];
     // boucle sur les données json
     datas.forEach(projet => {
     // projet venant des données json
     let nomProjet = projet.refProjet;
-    console.log (nomProjet);
     // si valeur de la chaine current est inclus dans la chaine du tableau json
     if (nomProjet.includes(refProjet)){
         // rempli le tableau avec tous les elements de ce projet
         tabEltProjet.push(projet);
         // affichage du template projet
-        console.log (tabEltProjet);
         templateProjet (tabEltProjet);  
-        console.log(tabEltProjet[0].images.length);
         return tabEltProjet;
     }
     });

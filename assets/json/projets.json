@@ -102,6 +102,10 @@
         "images": 
         [ 
             { 
+            "name":"cav_form_accueil2.png",
+            "alt": "description"
+            },
+            { 
             "name":"cav_form_accueil.png",
             "alt": "description"
             },

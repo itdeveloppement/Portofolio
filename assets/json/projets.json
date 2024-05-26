@@ -173,7 +173,7 @@
             }
         ],
         "contexte": "Projet réalisé dans le cadre de la formation développeur web et web mobile chez Webecome",
-        "role": "Developpement de la partie back-end en PHP selon le modele MVC. Lien avec la base de données SQL.",
+        "role": "Developpement de la partie back-end en PHP selon le modele MVC. Creation de la base de données SQL sous phpMyAdmin. Lien avec la base de données SQL.",
         "technos":
         [ 
             { 
@@ -182,6 +182,10 @@
             },
             { 
             "name": "logo-sql.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-phpMyAdmin.png",
             "alt": "Logo"
             },
             { 

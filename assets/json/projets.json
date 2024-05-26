@@ -1,6 +1,6 @@
 [
     {
-        "refProjet": "PO_2024_000001",
+        "refProjet": "PO_2024_000003",
         "nameProjet": "Men Sportwear",
         "presentationProjet": "Boutique de vetements, chaussures et équipement de sport pour homme.",
         "images": 
@@ -93,10 +93,10 @@
             "alt": "Logo"
             }
         ],
-        "commanditaire": "Centre de formation WeBecome (Saint Etienne)."
+        "commanditaire": "Centre de formation Webecome (Saint Etienne)."
     },
     {
-        "refProjet": "PO_2024_000003",
+        "refProjet": "PO_2024_000001",
         "nameProjet": "Collecte de données",
         "presentationProjet": "Formulaire de collecte de données en lien avec l'ERP et CRM Dolibarr",
         "images": 
@@ -131,10 +131,6 @@
             "alt": "Logo"
             },
             { 
-            "name": "dolibarr.png",
-            "alt": "Logo"
-            },
-            { 
             "name": "logo-php.png",
             "alt": "Logo"
             },
@@ -160,32 +156,36 @@
         "images": 
         [ 
             { 
-            "name": "meteo-meteo.png",
+            "name": "concert_liste_concert.png",
             "alt": "description"
             },
             { 
-            "name": "meteo-icons.png",
+            "name": "concert_form_messagerie.png",
             "alt": "description"
             },
             { 
-            "name": "meteo-vent.png",
+            "name": "concert_form_ajouter_concert.png",
+            "alt": "description"
+            },
+            { 
+            "name": "concert_form_ajouter_compte.png",
             "alt": "description"
             }
         ],
-        "contexte": "Projet réalisé dans le cadre de la formation développeur web et web mobile chez WeBecome",
-        "role": "Integration de la maquette : HTML et CSS et dynamisation des pages en Java Script. Mise en lien avec l'API api.open-meteo.com",
+        "contexte": "Projet réalisé dans le cadre de la formation développeur web et web mobile chez Webecome",
+        "role": "Developpement de la partie back-end en PHP selon le modele MVC. Lien avec la base de données SQL.",
         "technos":
         [ 
             { 
-            "name": "logo-html.png",
+            "name": "logo-php.png",
             "alt": "Logo"
             },
             { 
-            "name": "logo-css.png",
+            "name": "logo-sql.png",
             "alt": "Logo"
             },
             { 
-            "name": "logo-js.png",
+            "name": "logo-visual.png",
             "alt": "Logo"
             },
             { 
@@ -193,7 +193,7 @@
             "alt": "Logo"
             }
         ],
-        "commanditaire": "Centre de formation WeBecome (Saint Etienne)."
+        "commanditaire": "Centre de formation Webecome (Saint Etienne)."
     }
  
 ]

@@ -102,7 +102,7 @@
         "images": 
         [ 
             { 
-            "name": "cav_form_accueil.png",
+            "name": "ms_carte.png",
             "alt": "description"
             },
             { 
@@ -151,7 +151,7 @@
             "alt": "Logo"
             }
         ],
-        "commanditaire": "Centre de formation WeBecome (Saint Etienne)."
+        "commanditaire": "Société Cigale Aventure."
     },
     {
         "refProjet": "PO_2024_000004",

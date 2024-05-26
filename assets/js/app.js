@@ -65,7 +65,6 @@ fetch("./assets/json/projets.json")
 })
 .then (response=>{
   templateProjet (response) 
-    console.log(response)
 })
 
 /** affiche le template projet
@@ -101,7 +100,6 @@ function templateProjet (datasProjet) {
  * @param {string} refProjet la reference du projet
  */
 function styleOpacityOver(refProjet) {
-  console.log(refProjet)
   document.querySelector(`.container__filter-opa-${refProjet}`).style.opacity = '1';
   document.querySelector(`.container__filter-opa-${refProjet}`).style.transition = 'opacity 0.8s ease';
 }
@@ -110,7 +108,6 @@ function styleOpacityOver(refProjet) {
  * @param {string} refProjet la reference du projet
  */
 function styleOpacityOut(refProjet) {
-  console.log(refProjet)
   document.querySelector(`.container__filter-opa-${refProjet}`).style.opacity = '0';
   document.querySelector(`.container__filter-opa-${refProjet}`).style.transition = 'opacity 0.8s ease';
 }

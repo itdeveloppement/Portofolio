@@ -177,6 +177,14 @@
         "technos":
         [ 
             { 
+            "name": "logo-html.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-css.png",
+            "alt": "Logo"
+            },
+            { 
             "name": "logo-php.png",
             "alt": "Logo"
             },

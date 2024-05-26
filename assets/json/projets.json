@@ -97,25 +97,21 @@
     },
     {
         "refProjet": "PO_2024_000003",
-        "nameProjet": "Application météo",
-        "presentationProjet": "Meteo en temps réel et lieu geolocalisé",
+        "nameProjet": "Collecte de données",
+        "presentationProjet": "Formulaire de collecte de données en lien avec l'ERP et CRM Dolibarr",
         "images": 
         [ 
             { 
-            "name": "meteo-meteo.png",
+            "name": "cav_form_accueil.png",
             "alt": "description"
             },
             { 
-            "name": "meteo-icons.png",
-            "alt": "description"
-            },
-            { 
-            "name": "meteo-vent.png",
+            "name": "form_modification.png",
             "alt": "description"
             }
         ],
-        "contexte": "Projet réalisé dans le cadre de la formation développeur web et web mobile chez WeBecome",
-        "role": "Integration de la maquette : HTML et CSS et dynamisation des pages en Java Script. Mise en lien avec l'API api.open-meteo.com",
+        "contexte": "Projet réalisé pour la société Cigale Aventure",
+        "role": "Integration de la maquette : HTML et CSS et dynamisation des pages en Java Script. Intégration dans l'architecture Dolibarr. Relation avec la base de données de Dolibarr. Deploiement sur serveur Site Ground ",
         "technos":
         [ 
             { 
@@ -128,6 +124,26 @@
             },
             { 
             "name": "logo-js.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-dolibarr.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "dolibarr.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-php.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-sql.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-visual.png",
             "alt": "Logo"
             },
             { 

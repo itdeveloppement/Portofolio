@@ -106,7 +106,7 @@
             "alt": "description"
             },
             { 
-            "name": "form_modification.png",
+            "name": "cav_form_modification.png",
             "alt": "description"
             }
         ],
@@ -155,8 +155,8 @@
     },
     {
         "refProjet": "PO_2024_000004",
-        "nameProjet": "Application météo",
-        "presentationProjet": "Meteo en temps réel et lieu geolocalisé",
+        "nameProjet": "Application mise en relation",
+        "presentationProjet": "Application de mise en relation entre des artistes et des entreprises",
         "images": 
         [ 
             { 

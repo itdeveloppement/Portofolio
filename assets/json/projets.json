@@ -206,6 +206,59 @@
             }
         ],
         "commanditaire": "Centre de formation Webecome (Saint Etienne)."
+    },
+    {
+        "refProjet": "PO_2024_000005",
+        "nameProjet": "Shop vetements et accessoires",
+        "presentationProjet": "Application mobile vente de vetements et accessoires",
+        "images": 
+        [ 
+            { 
+            "name": "shop_panier.jpeg",
+            "alt": "description"
+            },
+            { 
+            "name": "shop_accueil.jpeg",
+            "alt": "description"
+            },
+            { 
+            "name": "shop_accueil2.jpeg",
+            "alt": "description"
+            },
+            { 
+            "name": "shop_produit.jpeg",
+            "alt": "description"
+            }
+        ],
+        "contexte": "Projet réalisé dans le cadre de la formation développeur web et web mobile chez Webecome",
+        "role": "Developpement de la partie front_end avec pour support React.",
+        "technos":
+        [ 
+            { 
+            "name": "logo-html.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-css.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-php.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-react.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-visual.png",
+            "alt": "Logo"
+            },
+            { 
+            "name": "logo-github.png",
+            "alt": "Logo"
+            }
+        ],
+        "commanditaire": "Centre de formation Webecome (Saint Etienne)."
     }
- 
 ]

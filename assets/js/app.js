@@ -65,6 +65,7 @@ fetch("./assets/json/projets.json")
 })
 .then (response=>{
   templateProjet (response) 
+  console.log(response)
 })
 
 /** affiche le template projet

@@ -29,6 +29,7 @@ document.querySelector(".hamburger").addEventListener("click", ()=> {
  *  @return ne retourne rien 
  */
 function openModal () {
+    console.log("test")
     let modale = document.querySelector(".header-modal");
     modale.classList.toggle("header-modal--is-open");
     let burger = document.querySelector(".header-burger");
@@ -51,6 +52,7 @@ let refProjet= ref[1];
 fetch("./assets/json/projets.json")
 .then (response=>{
     return response.json()
+  
 })
 .then (response=>{
     categorieProduit (response) 

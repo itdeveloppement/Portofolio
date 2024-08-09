@@ -214,19 +214,19 @@
         "images": 
         [ 
             { 
-            "name": "shop_accueil.jpeg",
+            "name": "shop_accueil.png",
             "alt": "description"
             },
             { 
-            "name": "shop_accueil2.jpeg",
+            "name": "shop_accueil2.png",
             "alt": "description"
             },
             { 
-            "name": "shop_panier.jpeg",
+            "name": "shop_panier.png",
             "alt": "description"
             },
             { 
-            "name": "shop_produit.jpeg",
+            "name": "shop_produit.png",
             "alt": "description"
             }
         ],
